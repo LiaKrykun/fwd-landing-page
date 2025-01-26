@@ -3,12 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio website</title>
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lexend+Exa&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bbc15162d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header id="header-page">
+        <a href="#intro"><i class="fa-solid fa-fire"></i></a>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#intro" class="hidden">Home</a></li>
+				<li><a href="#about-me" class="hidden">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Hi! My name is Lia.</h1>
+            <h2>I'm Front-End Web Developer.</h2>
+            <a class="btn-i" href="#about-me"><i class="fa-solid fa-arrow-down"></i></a>
+        </section>
+
+        <section id="about-me">
+            <h2 class="hidden br-btm">About me</h2>
+            <div>
+                I'm a new web developer passionate about creating clean, functional, and user-friendly websites.<br>
+                I am currently a student at BCIT, enrolled in the Front-End Web Developer program.<br>
+                This website serves as my portfolio, and I hope you find my work interesting! 
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="br-btm">My projects</h2>
+            <ul>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>Country website</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>Business Website</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>Country website</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>JavaScript Game</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>Movie Database</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>WordPress Site</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>Mindset Site</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>ECommerce</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+                <li>
+                    <a href="#" class="projects-btn">
+                        <h3>Shopify Store</h3>
+                        <i class="fa-solid fa-spinner"></i>
+                        Coming soon</a>
+                </li>
+            </ul>
+        </section>
+    </main>
     
+    <footer id="contact">
+        <div id="mailme">
+            <a href="mailto:lia.krykun@gmail.com"><i class="fa-solid fa-envelope"></i> Contact me</a>
+        </div>
+        <p class="sm-text">&copy; 2025 Lia Krykun</p>
+    </footer>
 </body>
 </html>
