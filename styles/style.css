@@ -28,7 +28,8 @@ a{
 	transition: 1s;
 }
 
-a:hover{
+a:hover,
+a:focus{
 	text-decoration: none;
 	color: #7780fe;
 }
@@ -89,7 +90,8 @@ h1{
 	transition: all 1s ease;
 }
 
-.btn-i:hover{
+.btn-i:hover
+.btn-i:focus{
 	color: white;
 	background-color: #4e57d4;
 }
