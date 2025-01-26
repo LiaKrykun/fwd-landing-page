@@ -4,7 +4,7 @@ html{
 
 body {
 	font-family: 'Lexend Exa', sans-serif;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	font-weight: 300;
 	line-height: 1.7;
 	color: white;
@@ -90,7 +90,7 @@ h1{
 	transition: all 1s ease;
 }
 
-.btn-i:hover
+.btn-i:hover,
 .btn-i:focus{
 	color: white;
 	background-color: #4e57d4;
@@ -160,7 +160,7 @@ h1{
 
 @media (min-width:52em){
 	body{
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-weight: 400;
 	}
 
@@ -185,7 +185,7 @@ h1{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		padding-bottom: 5rem;
 	}
 	
 	#about-me div{
