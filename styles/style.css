@@ -19,11 +19,19 @@
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-
 /* Typography
 --------------------------------------------- */
+html{
+	scroll-behavior: smooth;
+}
+
 body {
-	
+	font-family: 'Lexend Exa', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.7;
+	color: white;
+	background-color: #171b1e;
 }
 
 h1,
@@ -32,76 +40,224 @@ h3,
 h4,
 h5,
 h6 {
-	
+	font-family: Comfortaa, sans-serif;
+	margin: .5em auto;
+	font-weight: 600;
 }
 
-p {
-	
+a{
+	text-decoration: none;
+	color: #4e57d4;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
 }
-
-
-/* Elements
---------------------------------------------- */
-ul {
-	
+a:hover{
+	text-decoration: none;
+	color: #7780fe;
 }
-
-ol {
-	
-}
-
-dl {
-	
-}
-
-figure {
-	
-}
-
-table {
-	
-}
-
-/* Links
---------------------------------------------- */
-a {
-	
-}
-
-a:visited {
-	
-}
-
-a:hover {
-	
-}
-
-a:focus {
-	
-}
-
-a:active {
-	
+.sm-text{
+	font-size: 0.7rem;
 }
 
 
-/*--------------------------------------------------------------
-# Layout
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
+h1{
+	text-transform: uppercase;
+}
 
 /* Header
 --------------------------------------------- */
 
+#header-page{
+	background-color: #212429;
+	display: flex;
+	justify-content:space-evenly;
+	align-items: center;
+	padding: 1rem;
+	height: 4rem;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
+.navbar ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: .8rem;
+}
+.navbar ul li{
+	list-style-type: none;
+	font-size: 1rem;
+}
+.hidden{
+	display: none;
+}
 
 /* Main
 --------------------------------------------- */
+#intro{
+	height: 100vh;
+	display: flex;
+	gap: 0;
+	margin-top: 4rem;
+	flex-flow: column wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.btn-i{
+	color: #4e57d4;
+	padding: 0.5rem 2rem;
+	transition: all 1s ease;
+}
+
+.btn-i:hover{
+	color: white;
+	background-color: #4e57d4;
+}
+
+#about-me{
+	background-color: #4e57d4;
+	display: flex;
+	padding: 3rem 2rem;
+	width: 100%;
+	margin: 2rem auto;
+}
+
+#projects{
+	padding: 3rem 0;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 90vw;
+}
+#projects h2{
+	width:20rem;
+	margin-bottom: 5rem;
+}
+#projects ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+#projects ul li{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+	background-color: #4e57d4;
+	height: 20rem;
+	width: 15rem;
+	padding: 2rem;
+}
+
+.projects-btn{
+	color: white;
+	padding: 0;
+}
 
 
 /* Footer
 --------------------------------------------- */
+#contact{
+	background-color: #212429;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2px;
+	padding-top: 2rem;
+	padding-bottom: 0.1rem;
+}
+#mailme{
+	font-size: 2rem;
+	color: #4e57d4;
+	padding-bottom: 0.5rem;
+}
+
+@media (min-width:52em){
+	body{
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	#header-page{
+		padding: 0 1vw;
+	}
+
+	.hidden{
+		display: block;
+	}
+
+	.navbar ul{
+		gap: 5rem;
+		
+	}
+	.navbar ul li{
+		font-size: 1.5rem;
+	}
+
+	#about-me{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	
+	#about-me div{
+		width: 80vh;
+		line-height: 2;
+	}
+
+	#projects ul{
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 16px;
+		margin: 0;
+	}
+
+	#projects ul li{
+		flex: 1 1 calc(33.333% - 16px);
+		text-align: center;
+		border: 1px solid #ccc;
+		padding: 16px;
+		border-radius: 8px;
+	}
+
+	.sm-text{
+		font-size: 1rem;
+	}
+	
+	.br-btm{
+		border-bottom: 5px solid white;
+	}
+
+}
+
+@media (min-width: 160em){
+	*{
+		max-width: 120rem;
+		margin: 0 auto;
+	}
+	body{
+		background-color: #9fbffd;
+	}
+	main, section{
+		background-color: #171b1e;
+	}
+	#projects{
+		padding: 2rem;
+	}
+	.sm-text{
+		font-size: 1rem;
+	}
+}
+
